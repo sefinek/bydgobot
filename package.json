@@ -1,0 +1,46 @@
+{
+  "name": "bydgobot",
+  "version": "2.22.0",
+  "description": "Bot Discord pod pewny serwer.",
+  "homepage": "https://github.com/sefinek/bydgobot#readme",
+  "bugs": {
+    "url": "https://github.com/sefinek/bydgobot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sefinek/bydgobot.git"
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "author": "Sefinek <contact@sefinek.net> (https://sefinek.net)",
+  "main": "index.js",
+  "scripts": {
+    "mon": "nodemon index.js",
+    "sl": "node depoly-commands.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "up": "ncu -u && npm install && npm update && npm audit fix",
+    "upg": "git pull && npm run up",
+    "upp": "npm run upg && pm2 restart bydgobot"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^1.10.1",
+    "@discordjs/rest": "^2.4.3",
+    "@sefinek/cleverbot-free": "^2.1.5",
+    "axios": "^1.7.9",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.0.1",
+    "helmet": "^8.0.0",
+    "is-discord-invite": "^3.0.6",
+    "moment": "^2.30.1",
+    "mongoose": "^8.10.1",
+    "node-cron": "^3.0.3",
+    "node-os-utils": "^1.3.7",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "discord-api-types": "^0.37.119",
+    "globals": "^15.15.0"
+  }
+}

@@ -1,0 +1,1 @@
+module.exports = (msg, user) => msg.mentions.members.first() || msg.guild.members.cache.find(m => m.user.username === user || m.user.tag === user) || msg.guild.members.cache.get(user);
