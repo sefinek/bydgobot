@@ -17,7 +17,7 @@
     "sl": "node depoly-commands.js",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "up": "ncu -u && npm install && npm update && npm audit fix",
+    "m": "ncu -u && npm install && npm update",
     "upg": "git pull && npm run up",
     "upp": "npm run upg && pm2 restart bydgobot"
   },
